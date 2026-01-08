@@ -16,7 +16,7 @@
 3.  **Environment Configuration:**
     Create a `.env` file in the root directory and add the following variables:
     `env
-   MONGO_URI=mongodb+srv://Movie_booking:jYM8faaHG20EbxKe@cluster0.47olkeh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+    MONGO_URI=mongodb+srv://Movie_booking:jYM8faaHG20EbxKe@cluster0.47olkeh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
 
     PORT=3000
 
@@ -32,6 +32,7 @@
 
 4.  **Run the Server:**
     - For development (with nodemon):
+    Deployment On Railway
       ```bash
       npm run dev
       ```
