@@ -17,6 +17,7 @@
     Create a `.env` file in the root directory and add the following variables:
     `env
    MONGO_URI=mongodb+srv://Movie_booking:jYM8faaHG20EbxKe@cluster0.47olkeh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+   
     PORT=3000
 CLERK_PUBLISHABLE_KEY=pk_test_bWVldC1oYWxpYnV0LTMxLmNsZXJrLmFjY291bnRzLmRldiQ
 CLERK_SECRET_KEY=sk_test_7o2qDOn4Eoa7vH1Hj2Xo3aJ8b9650K2659p4829672
