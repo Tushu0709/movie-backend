@@ -3,8 +3,10 @@ import cors from "cors";
 import "dotenv/config";
 import connectDB from "./config/db.js";
 // import { clerkMiddleware } from "@clerk/express"; // Removed Clerk
-import { serve } from "inngest/express";
-import { inngest, functions } from "./inngest/index.js";
+// Inngest integration removed (local ./inngest/index.js missing)
+// If you later add an `inngest` integration, re-enable these imports:
+// import { serve } from "inngest/express";
+// import { inngest, functions } from "./inngest/index.js";
 
 import movieRouter from "./routes/movieRoutes.js";
 import authRouter from "./routes/authRoutes.js";
@@ -22,8 +24,6 @@ app.use(cors());
 // API Routes
 app.get("/", (req, res) => res.send("Server is Live!"));
 app.use("/api/auth", authRouter); // New Auth Routes
-app.use("/api/inngest", serve({ client: inngest, functions }));
-
 app.use('/api/movie', movieRouter);
 
 app.listen(port, () =>
